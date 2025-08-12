@@ -1,0 +1,55 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Methodology: PINNs as Constrained Optimizers}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Core Formulation}{1}{subsection.1.1}\protected@file@percent }
+\newlabel{eq:total_loss}{{1}{1}{Core Formulation}{equation.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Loss Component Specification}{1}{subsection.1.2}\protected@file@percent }
+\newlabel{eq:pde_loss}{{2}{1}{Loss Component Specification}{equation.2}{}}
+\newlabel{eq:bc_loss}{{3}{1}{Loss Component Specification}{equation.3}{}}
+\newlabel{eq:ic_loss}{{4}{2}{Loss Component Specification}{equation.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces PINN computational graph showing loss components and automatic differentiation paths}}{2}{figure.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:pinn_arch}{{1}{2}{PINN computational graph showing loss components and automatic differentiation paths}{figure.caption.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Constraint Implementation Strategies}{2}{subsection.1.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Constraint enforcement methods}}{2}{table.caption.2}\protected@file@percent }
+\newlabel{tab:constraints}{{1}{2}{Constraint enforcement methods}{table.caption.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Application to Beam Deflection Problems}{2}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}General Euler-Bernoulli Formulation}{2}{subsection.2.1}\protected@file@percent }
+\newlabel{eq:beam_pde}{{5}{2}{General Euler-Bernoulli Formulation}{equation.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Problem 1: Cantilever Beam}{3}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Boundary Conditions}{3}{subsubsection.2.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}PINN Implementation}{3}{subsubsection.2.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Predicted deflection vs analytical solution: $u_{\text  {exact}}(x) = -\frac  {q}{EI}\left (\frac  {x^4}{24} - \frac  {Lx^3}{6} + \frac  {L^2x^2}{4}\right )$}}{3}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:cantilever}{{2}{3}{Predicted deflection vs analytical solution: $u_{\text {exact}}(x) = -\frac {q}{EI}\left (\frac {x^4}{24} - \frac {Lx^3}{6} + \frac {L^2x^2}{4}\right )$}{figure.caption.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Key training metrics for cantilever beam (best model at step 4000)}}{4}{table.caption.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Loss convergence for cantilever beam (log scale)}}{4}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:cantilever_convergence}{{3}{4}{Loss convergence for cantilever beam (log scale)}{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3}Convergence Behavior}{5}{subsubsection.2.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Problem 2: Fully Restrained Beam}{5}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}Boundary Conditions}{5}{subsubsection.2.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2}PINN Implementation}{5}{subsubsection.2.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Predicted deflection vs analytical solution: $w_{\text  {exact}}(x) = -\frac  {q}{24EI}(x^4 - 2Lx^3 + L^2x^2)$}}{5}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:restrained}{{4}{5}{Predicted deflection vs analytical solution: $w_{\text {exact}}(x) = -\frac {q}{24EI}(x^4 - 2Lx^3 + L^2x^2)$}{figure.caption.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Key training metrics for fully restrained beam (best model at step 28000)}}{6}{table.caption.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Total loss convergence for fully restrained beam (log scale)}}{6}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:restrained_convergence}{{5}{6}{Total loss convergence for fully restrained beam (log scale)}{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.3}Convergence Behavior}{7}{subsubsection.2.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Problem 3: Fully Restrained Beam Under Mid-Span Point Load}{7}{subsection.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.1}Governing Equation and Analytical Solution}{7}{subsubsection.2.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.2}PINN Implementation with Gaussian Approximation}{7}{subsubsection.2.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.3}Results and Convergence}{7}{subsubsection.2.4.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces PINN prediction vs analytical solution ($P=-10000$ N, $L=1$ m, $EI=200$ N$\cdot $m$^2$)}}{8}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:midspan_restrained}{{6}{8}{PINN prediction vs analytical solution ($P=-10000$ N, $L=1$ m, $EI=200$ N$\cdot $m$^2$)}{figure.caption.9}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Training metrics (exponential decay of BC loss weights)}}{8}{table.caption.10}\protected@file@percent }
+\bibcite{raissi2019physics}{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Adaptive Loss Weighting Strategy}{9}{subsection.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Discussion: Advantages for Structural Analysis}{9}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Key Benefits}{9}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Convergence Analysis}{9}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusion}{9}{section.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Characteristic multi-stage convergence behavior in PINNs}}{10}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:convergence_stages}{{7}{10}{Characteristic multi-stage convergence behavior in PINNs}{figure.caption.11}{}}
+\bibcite{wang2021understanding}{2}
+\gdef \@abspage@last{11}

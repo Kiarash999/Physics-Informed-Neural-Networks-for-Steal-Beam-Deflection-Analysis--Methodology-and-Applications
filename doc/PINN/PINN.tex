@@ -1,0 +1,115 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\title{Beam Deflection Problems}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Beam Deflection Problems}
+\subsection{Cantilever Beam Under Uniform Load}
+
+\textbf{Differential Equation:}
+\begin{equation}\tag{1}
+EI\frac{d^{4}w}{dx^{4}} = -q
+\end{equation}
+
+\textbf{Boundary Conditions:}
+\begin{itemize}
+    \item $w(0) = 0$ (No deflection at fixed end)
+    \item $w^{\prime}(0) = 0$ (No slope at fixed end)
+    \item $w^{\prime\prime}(L) = 0$ (No moment at free end)
+    \item $w^{\prime\prime\prime}(L) = 0$ (No shear at free end)
+\end{itemize}
+
+\textbf{Analytical Solution:}
+\begin{equation}\tag{2}
+w(x) = \frac{q}{24EI}\left(x^{4} - 4Lx^{3} + 6L^{2}x^{2}\right)
+\end{equation}
+
+\textbf{Maximum Deflection:}
+\begin{equation}\tag{3}
+w_{\max} = \frac{qL^{4}}{8EI} \quad \text{(at free end)}
+\end{equation}
+
+\subsection{Fully Restrained Beam Under Uniform Load}
+
+\begin{figure}[h]
+\centering
+\textbf{Figure 2:} Fully restrained beam with uniform load $q$
+\end{figure}
+
+\textbf{Differential Equation:}
+\begin{equation}\tag{4}
+EI\frac{d^{4}w}{dx^{4}} = -q
+\end{equation}
+
+\textbf{Boundary Conditions:}
+\begin{itemize}
+    \item $w(0) = w(L) = 0$
+    \item $w^{\prime}(0) = w^{\prime}(L) = 0$
+\end{itemize}
+
+\textbf{Analytical Solution:}
+\begin{equation}\tag{5}
+w(x) = \frac{q}{24EI}\left(x^{4} - 2Lx^{3} + L^{3}x\right)
+\end{equation}
+
+\textbf{Maximum Deflection:}
+\begin{equation}\tag{6}
+w_{\max} = \frac{qL^{4}}{384EI} \quad \text{(at mid-span)}
+\end{equation}
+
+\subsection{Fully Restrained Beam Under Mid-Span Point Load}
+
+\textbf{Differential Equation:}
+\begin{equation}\tag{7}
+EI\frac{d^{4}w}{dx^{4}} = -P\delta\left(x - \frac{L}{2}\right)
+\end{equation}
+
+\textbf{Boundary Conditions:}
+\begin{itemize}
+    \item $w(0) = w(L) = 0$
+    \item $w^{\prime}(0) = w^{\prime}(L) = 0$
+\end{itemize}
+
+\textbf{Analytical Solution (Piecewise):}
+\begin{equation}\tag{8}
+w(x) = 
+\begin{cases}
+\dfrac{P}{48EI}\left(3Lx^{2} - 4x^{3}\right) & 0 \leq x \leq \dfrac{L}{2} \\[2ex]
+\dfrac{P}{48EI}\left(3Lx^{2} - 4x^{3} + L^{3} - 6L^{2}\left(x - \dfrac{L}{2}\right)\right) & \dfrac{L}{2} \leq x \leq L
+\end{cases}
+\end{equation}
+
+\textbf{Maximum Deflection:}
+\begin{equation}\tag{9}
+w_{\max} = \frac{PL^{3}}{192EI} \quad \text{(at mid-span)}
+\end{equation}
+
+\begin{figure}[h]
+\centering
+\textbf{Figure 3:} Fully restrained beam with point load $P$ at mid-span
+\end{figure}
+
+\section*{Notation}
+\begin{itemize}
+    \item $E$: Young's modulus (Pa)
+    \item $I$: Moment of inertia (m\textsuperscript{4})
+    \item $L$: Beam length (m)
+    \item $q$: Uniform load intensity (N/m)
+    \item $P$: Point load magnitude (N)
+\end{itemize}
+
+\vspace{1em}
+\textbf{Image Sources:} Replace \texttt{cantilever\_uniform\_load.png}, \texttt{fixed\_fixed\_uniform.png}, and \texttt{fixed\_fixed\_point.png} with actual image files
+
+\textbf{Reference:} Beam diagrams generated using SkyCiv Beam Calculator
+
+\end{document}
