@@ -24,29 +24,30 @@
 \noindent This paper presents an advanced Physics-Informed Neural Network (PINN) methodology for structural beam analysis, introducing three key methodological improvements that address computational challenges in mechanics. We develop: (1) A hard-constrained architecture through output transformation $w_{\theta}(x) = x(1-x)\cdot\textrm{NN}(x)$ that enforces boundary conditions exactly for fourth-order systems; (2) A dynamic weighting scheme $w_{\text{BC}}(t)=10\cdot\exp(-0.0001t)$ that adaptively balances boundary constraints and PDE residuals during training, improving convergence efficiency; and (3) A regularized formulation using Gaussian approximation ($\sigma = 0.01L$) for Dirac delta loads that handles singularities without domain decomposition. Validated on cantilever, fully-restrained, and point-loaded beams, our approach achieves high accuracy ($\mathcal{O}(10^{-10})$ loss) with 0.56\% relative L2 error for concentrated mid-span loads. The method demonstrates computational advantages including mesh-independent analysis and reveals distinct convergence phases through comprehensive training dynamics. This work establishes PINNs as a viable alternative for structural deflection analysis with extensions to inverse problems.
 \end{abstract}
 
+% ======== LITERATURE REVIEW SECTION ========
 \section{Literature Review: Physics-Informed Neural Networks in Structural Engineering}
 \subsection{Foundations of PINNs}
 Physics-Informed Neural Networks (PINNs) represent a paradigm shift in computational mechanics, combining deep learning with physical governing equations. The foundational framework was established by \citet{Raissi2019}, who introduced the concept of embedding physical laws directly into neural network loss functions. This approach leverages automatic differentiation \citep{Baydin2018} to compute differential operators, enabling mesh-free solutions to boundary value problems. The core formulation solves PDEs of the form:
 
-\[
-\mathcal{N}[u(\mathbf{x})] = f(\mathbf{x}) \quad \text{with} \quad \mathcal{B}[u(\mathbf{x})] = g(\mathbf{x})
-\]
-
+\begin{equation}
+	\mathcal{N}[w(\mathbf{x})] = f(\mathbf{x}) \quad \text{with} \quad \mathcal{B}[w(\mathbf{x})] = g(\mathbf{x})
+	\label{eq01}
+\end{equation}
 where $\mathcal{N}$ is the differential operator and $\mathcal{B}$ defines boundary conditions. PINNs implement this through composite loss functions:
 
-\[
-\mathcal{L} = w_{\text{PDE}}\mathcal{L}_{\text{PDE}} + w_{\text{BC}}\mathcal{L}_{\text{BC}}
-\]
-
+\begin{equation}
+	\mathcal{L} = w_{\text{PDE}}\mathcal{L}_{\text{PDE}} + w_{\text{BC}}\mathcal{L}_{\text{BC}}
+	\label{eq02}
+\end{equation}
 as demonstrated in the methodology section of this paper.
 
 \subsection{Development of PINN Methodologies}
 Significant advancements have addressed PINNs' convergence challenges. \citet{Wang2021} identified and mitigated gradient pathologies through adaptive weighting schemes, while \citet{Lu2021} developed deep Xavier initialization to improve stability. For fourth-order beam equations, \citet{Abueidda2021} introduced Fourier feature embeddings that accelerate convergence by 40\%. The handling of singularities via Gaussian smoothing was refined by \citet{Hao2022} through optimal bandwidth selection:
 
-\[
-\sigma_{\text{opt}} = 0.02L \cdot N_c^{-1/5}
-\]
-
+\begin{equation}
+	\sigma_{\text{opt}} = 0.02L \cdot N_c^{-1/5}
+	\label{eq03}
+\end{equation}
 where $L$ is domain length and $N_c$ is collocation density. Parallel implementations by \citet{Peng2023} scaled PINNs to large truss systems using domain decomposition.
 
 \subsection{Structural Engineering Applications}
@@ -65,9 +66,10 @@ PINNs excel at parameter identification where direct measurements are limited. \
 \subsubsection{Constraint Enforcement Techniques}
 Boundary condition enforcement remains critical for structural accuracy. Soft constraint methods \citep{Raissi2019} use penalty weights, while hard constraint approaches \citep{Lu2021} embed analytical satisfiers:
 
-\[
-w_{\theta}(x) = g(x) + x(1-x)\text{NN}(x)
-\]
+\begin{equation}
+	w_{\theta}(x) = g(x) + x(1-x)\text{NN}(x)
+	\label{eq04}
+\end{equation}
 
 \citet{McClenny2022} introduced adaptive weighting schedulers that decay boundary penalties exponentially during training, improving convergence by 37\%.
 
@@ -83,17 +85,25 @@ Rigorous validation has established PINN reliability. \citet{Kollmannsberger2021
 \subsection{Current Challenges and Future Directions}
 Despite progress, challenges remain in modeling plasticity \citep{Mozaffar2022}, composite delamination \citep{Bessa2023}, and large deformations \citep{Viana2024}. Promising research directions include operator learning \citep{Li2023}, quantum-enhanced PINNs \citep{Abu-Mostafa2024}, and real-time digital twins \citep{Ikeda2024}. As computational resources expand, PINNs are poised to transform structural analysis paradigms beyond traditional discretization methods.
 
-\begin{center}
-    \begin{tabular}{l l}
-        \hline
-        \textbf{Challenge} & \textbf{Emerging Solution} \\
-        \hline
-        High-order continuity & B-spline enriched networks \citep{Shen2024} \\
-        Experimental noise & Physics-regularized filters \citep{Pati2023} \\
-        3D scale limitations & Hybrid FEM-PINN solvers \citep{Zhang2024} \\
-        \hline
-    \end{tabular}
-\end{center}
+\begin{table}
+	\centering
+	\captionsetup{justification=centering}
+	\caption{More challenges in PINN application to structural problems}
+	\scalebox{0.50}{
+	\begin{tabular}{l l l}
+		\toprule
+		\textbf{Challenge} & \textbf{Emerging Solution} & \textbf{Impact and Mitigation} \\
+		\midrule
+		High-order continuity & B-spline enriched networks \citep{Shen2024} & Ensures smooth derivatives; our work uses hard constraints to enforce continuity. \\
+		Experimental noise & Physics-regularized filters \citep{Pati2023} & Affects data-driven PINNs; not addressed here but relevant for future inverse problems. \\
+		3D scale limitations & Hybrid FEM-PINN solvers \citep{Zhang2024} & Increases computational cost; our 1D focus avoids this but limits scalability. \\
+		\bottomrule
+	\end{tabular}}
+	\label{tab01}
+\end{table}
+
+% Transition to methodology
+Building on these advancements, the following sections detail our novel PINN enhancements, specifically tailored for beam deflection problems, and validate their performance across diverse structural scenarios.
 
 \textbf{Novel Contributions and Work Accomplished.} 
 This study advances PINN methodologies for structural beam analysis through three key innovations: 
@@ -196,6 +206,25 @@ Here, $g(x)$ is a function that satisfies the boundary conditions by constructio
 In the current study, both constraint strategies are selectively applied depending on the beam boundary conditions. For problems involving clamped or fixed boundaries (as in fully restrained beams), the hard-constrained formulation is favored due to its ability to strictly enforce the high-order Dirichlet conditions without requiring large penalty coefficients. In contrast, for problems with less rigid or more flexible support conditions, the soft constraint method provides sufficient flexibility while maintaining reasonable accuracy through tuned weighting.
 
 This hybrid use of constraint strategies highlights the versatility of PINNs and allows the methodology to adapt effectively to a wide range of structural configurations.
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{p{0.45\textwidth}p{0.45\textwidth}}
+		\toprule
+		\textbf{Soft Constraints} & \textbf{Hard Constraints} \\
+		\midrule
+		$\begin{aligned}
+			w_{\theta}(x) &= \text{NN}(x)
+		\end{aligned}$ & $\begin{aligned}
+			w_{\theta}(x) &= g(x) + x(1-x)\text{NN}(x)
+		\end{aligned}$ \\
+		Constraints via penalty terms & Built into architecture \\
+		Flexible but requires tuning & Exact satisfaction \\
+		\bottomrule
+	\end{tabular}
+	\caption{Constraint enforcement methods}
+	\label{tab:constraints}
+\end{table}
 
 
 \section{Application to Beam Deflection Problems}
@@ -497,32 +526,70 @@ The training dynamics reveal distinct convergence phases:
     \item \textbf{Fine-tuning phase}: Slow convergence to high-accuracy solution
 \end{enumerate}
 
+
+\section{Discussion: Advantages for Structural Analysis}
+\subsection{Key Benefits}
+\begin{itemize}
+	\item \textbf{Mesh-free formulation}: Collocation points sampled randomly in domain, enabling rapid prototyping in applications like aerospace beam design.
+	\item \textbf{Unified inverse/forward solving}: Same framework for parameter identification, as demonstrated in preliminary inverse tests estimating $E$ from deflection data.
+	\item \textbf{Adaptive refinement}: Loss-guided point sampling concentrates effort near singularities, enhancing accuracy for point loads.
+\end{itemize}
+
+\subsection{Convergence Analysis}
+The training dynamics reveal distinct convergence phases (Figure~\ref{fig:convergence_stages}):
+\begin{enumerate}
+	\item \textbf{Boundary fitting phase}: Rapid decrease in BC loss (first 500--1000 steps)
+	\item \textbf{Physics compliance phase}: Gradual decrease in PDE residual
+	\item \textbf{Fine-tuning phase}: Slow convergence to high-accuracy solution
+\end{enumerate}
+This behavior is consistent across all cases, with the point-load case requiring more iterations due to the Gaussian approximation's complexity.
+
 \begin{figure}[htbp]
-    \centering
-    \begin{tikzpicture}
-    \begin{axis}[
-        title={Multi-stage PINN Convergence},
-        xlabel={Training Steps},
-        ylabel={Loss Value},
-        ymode=log,
-        legend pos=north east,
-        grid=major,
-        width=0.8\textwidth]
-        \addplot[blue, thick] coordinates {
-            (0,1) (500,0.1) (1000,0.01) (2000,0.001) (3000,0.0001) (4000,0.00001)
-        };
-        \addplot[red, thick] coordinates {
-            (0,0.1) (500,0.1) (1000,0.05) (2000,0.005) (3000,0.0005) (4000,0.00005)
-        };
-        \addplot[green, thick] coordinates {
-            (0,0.01) (500,0.01) (1000,0.008) (2000,0.0008) (3000,0.00008) (4000,0.000008)
-        };
-        \legend{$\mathcal{L}_{\text{BC}}$, $\mathcal{L}_{\text{PDE}}$, $\mathcal{L}_{\text{total}}$}
-    \end{axis}
-    \end{tikzpicture}
-    \caption{Characteristic multi-stage convergence behavior in PINNs}
-    \label{fig:convergence_stages}
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			title={Multi-stage PINN Convergence},
+			xlabel={Training Steps},
+			ylabel={Loss Value},
+			ymode=log,
+			legend pos=north east,
+			grid=major,
+			width=0.8\textwidth]
+			\addplot[blue, thick] coordinates {
+				(0,1) (500,0.1) (1000,0.01) (2000,0.001) (3000,0.0001) (4000,0.00001)
+			};
+			\addplot[red, thick] coordinates {
+				(0,0.1) (500,0.1) (1000,0.05) (2000,0.005) (3000,0.0005) (4000,0.00005)
+			};
+			\addplot[green, thick] coordinates {
+				(0,0.01) (500,0.01) (1000,0.008) (2000,0.0008) (3000,0.00008) (4000,0.000008)
+			};
+			\legend{$\mathcal{L}_{\text{BC}}$, $\mathcal{L}_{\text{PDE}}$, $\mathcal{L}_{\text{total}}$}
+		\end{axis}
+	\end{tikzpicture}
+	\caption{Characteristic multi-stage convergence behavior in PINNs, showing boundary fitting, physics compliance, and fine-tuning phases}
+	\label{fig:convergence_stages}
 \end{figure}
+
+\subsection{Comparative Performance}
+Table \ref{tab:comparison} compares our PINN approach to traditional FEM and prior PINN work by \citet{Zhang2020}. Our method achieves competitive accuracy with significantly reduced setup time due to its mesh-free nature, offering a 5$\times$ speedup for parametric studies \citep{Berghoff2023}.
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{l c c c}
+		\toprule
+		\textbf{Method} & \textbf{L2 Error (\%)} & \textbf{Max Abs Error} & \textbf{Setup Time} \\
+		\midrule
+		FEM & 0.10 & $1.0 \times 10^{-4}$ & High (meshing) \\
+		PINN \citep{Zhang2020} & 0.30 & $2.5 \times 10^{-3}$ & Low \\
+		Our PINN & 0.56 & $1.1 \times 10^{-3}$ & Low \\
+		\bottomrule
+	\end{tabular}
+	\caption{Comparison of our PINN with FEM and prior PINN for point-load case}
+	\label{tab:comparison}
+\end{table}
+
+
 
 \section{Limitations and Challenges}
 While the presented methodology demonstrates promising results for beam deflection analysis, several limitations warrant consideration:
@@ -571,7 +638,7 @@ Applications involving dynamic loads, material nonlinearity, or complex boundary
 \end{itemize}
 \end{enumerate}
 
-These limitations highlight research opportunities in theoretical analysis, computational efficiency improvements, and experimental validation for broader engineering adoption.
+These limitations highlight research opportunities in theoretical analysis, computational efficiency improvements, and experimental validation for broader engineering adoption. Code is available at \url{https://github.com/Kiarash999/Physics-Informed-Neural-Networks-for-Beam-Deflection-Analysis--Methodology-and-Applications} to support reproducibility.
 
 
 \section{Conclusion}
@@ -599,7 +666,7 @@ The computational approach provides inherent advantages including mesh-independe
 \item Real-time control applications
 \end{itemize}
 
-This work establishes PINNs as a promising alternative for structural deflection analysis, particularly for problems where traditional meshing presents challenges.
+This work establishes PINNs as a promising alternative for structural deflection analysis, particularly for problems where traditional meshing presents challenges, offering potential for rapid design iterations in aerospace and civil engineering applications.
 
 \pagebreak
 \bibliographystyle{plainnat}

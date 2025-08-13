@@ -6,6 +6,8 @@
 \citation{Baydin2018}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Literature Review: Physics-Informed Neural Networks in Structural Engineering}{1}{section.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Foundations of PINNs}{1}{subsection.1.1}\protected@file@percent }
+\newlabel{eq01}{{1}{1}{Foundations of PINNs}{equation.1}{}}
+\newlabel{eq02}{{2}{1}{Foundations of PINNs}{equation.2}{}}
 \citation{Wang2021}
 \citation{Lu2021}
 \citation{Abueidda2021}
@@ -24,6 +26,7 @@
 \citation{Raissi2019}
 \citation{Lu2021}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Development of PINN Methodologies}{2}{subsection.1.2}\protected@file@percent }
+\newlabel{eq03}{{3}{2}{Development of PINN Methodologies}{equation.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Structural Engineering Applications}{2}{subsection.1.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1.3.1}Beam and Plate Analysis}{2}{subsubsection.1.3.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1.3.2}Frame Systems and Connections}{2}{subsubsection.1.3.2}\protected@file@percent }
@@ -47,55 +50,69 @@
 \citation{Zhang2024}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Algorithmic Advances}{3}{subsection.1.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1.4.1}Constraint Enforcement Techniques}{3}{subsubsection.1.4.1}\protected@file@percent }
+\newlabel{eq04}{{4}{3}{Constraint Enforcement Techniques}{equation.4}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1.4.2}Singularity Handling}{3}{subsubsection.1.4.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1.4.3}Multi-Scale Frameworks}{3}{subsubsection.1.4.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.5}Validation and Verification Studies}{3}{subsection.1.5}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.6}Current Challenges and Future Directions}{3}{subsection.1.6}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces More challenges in PINN application to structural problems}}{4}{table.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab01}{{1}{4}{More challenges in PINN application to structural problems}{table.caption.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Methodology: PINNs as Constrained Optimizers}{4}{section.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Core Formulation}{4}{subsection.2.1}\protected@file@percent }
-\newlabel{eq:total_loss}{{1}{4}{Core Formulation}{equation.1}{}}
+\newlabel{eq:total_loss}{{5}{5}{Core Formulation}{equation.5}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Loss Component Specification}{5}{subsection.2.2}\protected@file@percent }
-\newlabel{eq:pde_loss}{{2}{5}{Loss Component Specification}{equation.2}{}}
-\newlabel{eq:bc_loss}{{3}{5}{Loss Component Specification}{equation.3}{}}
-\newlabel{eq:ic_loss}{{4}{5}{Loss Component Specification}{equation.4}{}}
+\newlabel{eq:pde_loss}{{6}{5}{Loss Component Specification}{equation.6}{}}
+\newlabel{eq:bc_loss}{{7}{5}{Loss Component Specification}{equation.7}{}}
+\newlabel{eq:ic_loss}{{8}{5}{Loss Component Specification}{equation.8}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Constraint Implementation Strategies}{5}{subsection.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Soft Constraints:}{5}{section*.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Schematic of a Physics-Informed Neural Network (PINN) architecture integrating PDE, and BC constraints through automatic differentiation.}}{6}{figure.caption.1}\protected@file@percent }
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{}{{1}{6}{Schematic of a Physics-Informed Neural Network (PINN) architecture integrating PDE, and BC constraints through automatic differentiation}{figure.caption.1}{}}
-\@writefile{toc}{\contentsline {paragraph}{Hard Constraints:}{6}{section*.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Application in This Work:}{6}{section*.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Schematic of a Physics-Informed Neural Network (PINN) architecture integrating PDE, and BC constraints through automatic differentiation.}}{6}{figure.caption.2}\protected@file@percent }
+\newlabel{}{{1}{6}{Schematic of a Physics-Informed Neural Network (PINN) architecture integrating PDE, and BC constraints through automatic differentiation}{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Soft Constraints:}{6}{section*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Hard Constraints:}{6}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Application in This Work:}{6}{section*.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Constraint enforcement methods}}{7}{table.caption.6}\protected@file@percent }
+\newlabel{tab:constraints}{{2}{7}{Constraint enforcement methods}{table.caption.6}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Application to Beam Deflection Problems}{7}{section.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}General Euler-Bernoulli Formulation}{7}{subsection.3.1}\protected@file@percent }
-\newlabel{eq:beam_pde}{{5}{7}{General Euler-Bernoulli Formulation}{equation.5}{}}
+\newlabel{eq:beam_pde}{{9}{7}{General Euler-Bernoulli Formulation}{equation.9}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Problem 1: Cantilever Beam}{7}{subsection.3.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \relax }}{8}{figure.caption.5}\protected@file@percent }
-\newlabel{fig:cantilever}{{2}{8}{\relax }{figure.caption.5}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Training performance of PINN for the cantilever beam problem}}{8}{table.caption.6}\protected@file@percent }
-\newlabel{tab:cantilever_convergence}{{1}{8}{Training performance of PINN for the cantilever beam problem}{table.caption.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Loss convergence for cantilever beam}}{9}{figure.caption.7}\protected@file@percent }
-\newlabel{fig:cantilever_convergence}{{3}{9}{Loss convergence for cantilever beam}{figure.caption.7}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Problem 2: Fully Restrained Beam}{9}{subsection.3.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \relax }}{10}{figure.caption.8}\protected@file@percent }
-\newlabel{fig:restrained results}{{4}{10}{\relax }{figure.caption.8}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Training metrics for fully restrained beam}}{10}{table.caption.9}\protected@file@percent }
-\newlabel{tab:restrained_convergence}{{2}{10}{Training metrics for fully restrained beam}{table.caption.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Total loss convergence}}{11}{figure.caption.10}\protected@file@percent }
-\newlabel{fig:restrained_convergence}{{5}{11}{Total loss convergence}{figure.caption.10}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Problem 3: Fully Restrained Beam with Mid-Span Point Load}{11}{subsection.3.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Gaussian regularization of the Dirac delta function centered at $x = L/2$ with bandwidth $\sigma = 0.01L$. The approximation introduces smoothness required for automatic differentiation while maintaining the physical localization of the point load.}}{12}{figure.caption.11}\protected@file@percent }
-\newlabel{fig:delta_approximation}{{6}{12}{Gaussian regularization of the Dirac delta function centered at $x = L/2$ with bandwidth $\sigma = 0.01L$. The approximation introduces smoothness required for automatic differentiation while maintaining the physical localization of the point load}{figure.caption.11}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Convergence Analysis}{12}{subsection.3.5}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \relax }}{13}{figure.caption.12}\protected@file@percent }
-\newlabel{fig:mid-span_restrained}{{7}{13}{\relax }{figure.caption.12}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Convergence metrics for point-loaded beam ($P$ = -10,000 N, $L$ = 1 m, $EI$ = 200 N·m²)}}{13}{table.caption.13}\protected@file@percent }
-\newlabel{tab:point_convergence}{{3}{13}{Convergence metrics for point-loaded beam ($P$ = -10,000 N, $L$ = 1 m, $EI$ = 200 N·m²)}{table.caption.13}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Multi-component loss convergence showing effect of adaptive weighting}}{14}{figure.caption.14}\protected@file@percent }
-\newlabel{fig:point_convergence}{{8}{14}{Multi-component loss convergence showing effect of adaptive weighting}{figure.caption.14}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Characteristic multi-stage convergence behavior in PINNs}}{15}{figure.caption.15}\protected@file@percent }
-\newlabel{fig:convergence_stages}{{9}{15}{Characteristic multi-stage convergence behavior in PINNs}{figure.caption.15}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Limitations and Challenges}{15}{section.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{17}{section.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \relax }}{8}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:cantilever}{{2}{8}{\relax }{figure.caption.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Training performance of PINN for the cantilever beam problem}}{9}{table.caption.8}\protected@file@percent }
+\newlabel{tab:cantilever_convergence}{{3}{9}{Training performance of PINN for the cantilever beam problem}{table.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Loss convergence for cantilever beam}}{9}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:cantilever_convergence}{{3}{9}{Loss convergence for cantilever beam}{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Problem 2: Fully Restrained Beam}{10}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Problem 3: Fully Restrained Beam with Mid-Span Point Load}{10}{subsection.3.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \relax }}{11}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:restrained results}{{4}{11}{\relax }{figure.caption.10}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Training metrics for fully restrained beam}}{11}{table.caption.11}\protected@file@percent }
+\newlabel{tab:restrained_convergence}{{4}{11}{Training metrics for fully restrained beam}{table.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Total loss convergence}}{11}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:restrained_convergence}{{5}{11}{Total loss convergence}{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Gaussian regularization of the Dirac delta function centered at $x = L/2$ with bandwidth $\sigma = 0.01L$. The approximation introduces smoothness required for automatic differentiation while maintaining the physical localization of the point load.}}{12}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:delta_approximation}{{6}{12}{Gaussian regularization of the Dirac delta function centered at $x = L/2$ with bandwidth $\sigma = 0.01L$. The approximation introduces smoothness required for automatic differentiation while maintaining the physical localization of the point load}{figure.caption.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \relax }}{13}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:mid-span_restrained}{{7}{13}{\relax }{figure.caption.14}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Convergence metrics for point-loaded beam ($P$ = -10,000 N, $L$ = 1 m, $EI$ = 200 N·m²)}}{14}{table.caption.15}\protected@file@percent }
+\newlabel{tab:point_convergence}{{5}{14}{Convergence metrics for point-loaded beam ($P$ = -10,000 N, $L$ = 1 m, $EI$ = 200 N·m²)}{table.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Multi-component loss convergence showing effect of adaptive weighting}}{14}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:point_convergence}{{8}{14}{Multi-component loss convergence showing effect of adaptive weighting}{figure.caption.16}{}}
+\citation{Zhang2020}
+\citation{Berghoff2023}
+\citation{Zhang2020}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Convergence Analysis}{15}{subsection.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion: Advantages for Structural Analysis}{15}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Key Benefits}{15}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Convergence Analysis}{15}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Comparative Performance}{15}{subsection.4.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Characteristic multi-stage convergence behavior in PINNs, showing boundary fitting, physics compliance, and fine-tuning phases}}{16}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:convergence_stages}{{9}{16}{Characteristic multi-stage convergence behavior in PINNs, showing boundary fitting, physics compliance, and fine-tuning phases}{figure.caption.17}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Comparison of our PINN with FEM and prior PINN for point-load case}}{16}{table.caption.18}\protected@file@percent }
+\newlabel{tab:comparison}{{6}{16}{Comparison of our PINN with FEM and prior PINN for point-load case}{table.caption.18}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Limitations and Challenges}{17}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{18}{section.6}\protected@file@percent }
 \bibstyle{plainnat}
 \bibdata{main-bibfile.bib}
 \bibcite{Abu-Mostafa2024}{{1}{2024}{{Abu-Mostafa and Wang}}{{}}}
@@ -132,4 +149,4 @@
 \bibcite{Yu2023}{{32}{2023}{{Yu et~al.}}{{Yu, Zhao, and Wang}}}
 \bibcite{Zhang2020}{{33}{2020}{{Zhang et~al.}}{{Zhang, Yin, and Karniadakis}}}
 \bibcite{Zhang2024}{{34}{2024}{{Zhang and Liu}}{{}}}
-\gdef \@abspage@last{20}
+\gdef \@abspage@last{21}

@@ -7,112 +7,83 @@
 
 \bibitem[Abu-Mostafa and Wang(2024)]{Abu-Mostafa2024}
 Yaser Abu-Mostafa and Zi-Yong Wang.
-\newblock Quantum-enhanced physics-informed neural networks for structural
-  dynamics.
+\newblock Quantum-enhanced physics-informed neural networks for structural dynamics.
 \newblock \emph{npj Quantum Information}, 10\penalty0 (1):\penalty0 1--9, 2024.
 
 \bibitem[Abueidda et~al.(2021)Abueidda, Koric, and Sobh]{Abueidda2021}
 Diab~W Abueidda, Seid Koric, and Nahil~A Sobh.
-\newblock Deep learning for solving eigenvalue problems associated with
-  structural vibration.
-\newblock \emph{International Journal for Numerical Methods in Engineering},
-  122\penalty0 (23):\penalty0 7120--7132, 2021.
+\newblock Deep learning for solving eigenvalue problems associated with structural vibration.
+\newblock \emph{International Journal for Numerical Methods in Engineering}, 122\penalty0 (23):\penalty0 7120--7132, 2021.
 
-\bibitem[Abueidda et~al.(2022)Abueidda, Almasri, Ammourah, Ravaioli, Jasiuk,
-  and Sobh]{Abueidda2022}
-Diab~W Abueidda, Mohammad~A Almasri, Rafiq Ammourah, Umberto Ravaioli, Iwona
-  Jasiuk, and Nahil~A Sobh.
-\newblock Deep learning for topology optimization of functionally graded
-  plates.
-\newblock \emph{International Journal for Numerical Methods in Engineering},
-  123\penalty0 (10):\penalty0 2272--2290, 2022.
+\bibitem[Abueidda et~al.(2022)Abueidda, Almasri, Ammourah, Ravaioli, Jasiuk, and Sobh]{Abueidda2022}
+Diab~W Abueidda, Mohammad~A Almasri, Rafiq Ammourah, Umberto Ravaioli, Iwona Jasiuk, and Nahil~A Sobh.
+\newblock Deep learning for topology optimization of functionally graded plates.
+\newblock \emph{International Journal for Numerical Methods in Engineering}, 123\penalty0 (10):\penalty0 2272--2290, 2022.
 
-\bibitem[Baydin et~al.(2018)Baydin, Pearlmutter, Radul, and
-  Siskind]{Baydin2018}
-Atilim~Gunes Baydin, Barak~A Pearlmutter, Alexey~Andreyevich Radul, and
-  Jeffrey~Mark Siskind.
+\bibitem[Baydin et~al.(2018)Baydin, Pearlmutter, Radul, and Siskind]{Baydin2018}
+Atilim~Gunes Baydin, Barak~A Pearlmutter, Alexey~Andreyevich Radul, and Jeffrey~Mark Siskind.
 \newblock Automatic differentiation in machine learning: a survey.
-\newblock \emph{Journal of Machine Learning Research}, 18:\penalty0 1--43,
-  2018.
+\newblock \emph{Journal of Machine Learning Research}, 18:\penalty0 1--43, 2018.
 
 \bibitem[Berghoff and Hochreiner(2023)]{Berghoff2023}
 Marco Berghoff and Michael Hochreiner.
-\newblock Efficiency analysis of physics-informed neural networks in structural
-  engineering.
+\newblock Efficiency analysis of physics-informed neural networks in structural engineering.
 \newblock \emph{Advanced Engineering Informatics}, 56:\penalty0 101973, 2023.
 
 \bibitem[Bessa et~al.(2023)Bessa, Bostanabad, Liu, Hu, and Apley]{Bessa2023}
 M~A Bessa, R~Bostanabad, Z~Liu, A~Hu, and D~W Apley.
 \newblock Probabilistic physics-informed neural networks for fracture analysis.
-\newblock \emph{Journal of the Mechanics and Physics of Solids}, 170:\penalty0
-  105120, 2023.
+\newblock \emph{Journal of the Mechanics and Physics of Solids}, 170:\penalty0 105120, 2023.
 
 \bibitem[Chen et~al.(2023)Chen, Lu, Karniadakis, and Dal~Negro]{Chen2023}
 Yuyao Chen, Lu~Lu, George~E Karniadakis, and Luca Dal~Negro.
-\newblock Physics-informed neural networks with hard constraints for inverse
-  design.
+\newblock Physics-informed neural networks with hard constraints for inverse design.
 \newblock \emph{Nano Letters}, 23\penalty0 (6):\penalty0 1278--1285, 2023.
 
 \bibitem[Fuhg and Bouklas(2021)]{Fuhg2021}
 Jan~N Fuhg and Nikolaos Bouklas.
-\newblock Model-agnostic physics-informed neural networks for solving partial
-  differential equations.
+\newblock Model-agnostic physics-informed neural networks for solving partial differential equations.
 \newblock \emph{arXiv preprint arXiv:2106.14213}, 2021.
 
 \bibitem[Gao et~al.(2022)Gao, Wang, and Sun]{Gao2022}
 Han Gao, Jian-Xun Wang, and Linyu Sun.
-\newblock Transfer learning enhanced physics-informed neural networks for
-  welding deformation prediction.
-\newblock \emph{Journal of Manufacturing Processes}, 79:\penalty0 814--823,
-  2022.
+\newblock Transfer learning enhanced physics-informed neural networks for welding deformation prediction.
+\newblock \emph{Journal of Manufacturing Processes}, 79:\penalty0 814--823, 2022.
 
 \bibitem[Guo et~al.(2023)Guo, Hildreth, and Zhang]{Guo2023}
 Mingyang Guo, Owen Hildreth, and Lucy Zhang.
-\newblock Physics-informed neural networks for contact mechanics of rough
-  surfaces.
-\newblock \emph{Computer Methods in Applied Mechanics and Engineering},
-  405:\penalty0 115845, 2023.
+\newblock Physics-informed neural networks for contact mechanics of rough surfaces.
+\newblock \emph{Computer Methods in Applied Mechanics and Engineering}, 405:\penalty0 115845, 2023.
 
 \bibitem[Haghighat and Juanes(2023)]{Haghighat2023}
 Ehsan Haghighat and Ruben Juanes.
 \newblock A comparative study of neural network architectures for solving pdes.
-\newblock \emph{Computer Methods in Applied Mechanics and Engineering},
-  403:\penalty0 115718, 2023.
+\newblock \emph{Computer Methods in Applied Mechanics and Engineering}, 403:\penalty0 115718, 2023.
 
 \bibitem[Hao et~al.(2022)Hao, Ying, and Su]{Hao2022}
 Zhidong Hao, Chunxiao Ying, and Hang Su.
-\newblock Efficient physics-informed neural networks using gaussian process
-  regression and transfer learning.
-\newblock \emph{Computer Methods in Applied Mechanics and Engineering},
-  400:\penalty0 115491, 2022.
+\newblock Efficient physics-informed neural networks using gaussian process regression and transfer learning.
+\newblock \emph{Computer Methods in Applied Mechanics and Engineering}, 400:\penalty0 115491, 2022.
 
 \bibitem[Hughes et~al.(2022)Hughes, Sangalli, and Tani]{Hughes2022}
 Thomas~JR Hughes, Giancarlo Sangalli, and Mattia Tani.
-\newblock A hybrid physics-informed neural network for nonlinear structural
-  dynamics.
-\newblock \emph{Computer Methods in Applied Mechanics and Engineering},
-  400:\penalty0 115517, 2022.
+\newblock A hybrid physics-informed neural network for nonlinear structural dynamics.
+\newblock \emph{Computer Methods in Applied Mechanics and Engineering}, 400:\penalty0 115517, 2022.
 
 \bibitem[Ikeda et~al.(2024)Ikeda, Yoshida, and Nagai]{Ikeda2024}
 Yuji Ikeda, Junji Yoshida, and Kenichi Nagai.
-\newblock Digital twin framework for structural health monitoring using
-  physics-informed neural networks.
+\newblock Digital twin framework for structural health monitoring using physics-informed neural networks.
 \newblock \emph{Engineering Structures}, 299:\penalty0 117130, 2024.
 
-\bibitem[Kollmannsberger et~al.(2021)Kollmannsberger, D'Angella, Jokeit,
-  Herrmann, and Rank]{Kollmannsberger2021}
-Stefan Kollmannsberger, Davide D'Angella, Moritz Jokeit, Leonard Herrmann, and
-  Ernst Rank.
+\bibitem[Kollmannsberger et~al.(2021)Kollmannsberger, D'Angella, Jokeit, Herrmann, and Rank]{Kollmannsberger2021}
+Stefan Kollmannsberger, Davide D'Angella, Moritz Jokeit, Leonard Herrmann, and Ernst Rank.
 \newblock Deep learning in computational mechanics: a review.
 \newblock \emph{State of the Art Reports}, 2021.
 
-\bibitem[Li et~al.(2023)Li, Kovachki, Azizzadenesheli, Bhattacharya, Stuart,
-  and Anandkumar]{Li2023}
-Zongyi Li, Nikola Kovachki, Kamyar Azizzadenesheli, Kaushik Bhattacharya,
-  Andrew Stuart, and Anima Anandkumar.
+\bibitem[Li et~al.(2023)Li, Kovachki, Azizzadenesheli, Bhattacharya, Stuart, and Anandkumar]{Li2023}
+Zongyi Li, Nikola Kovachki, Kamyar Azizzadenesheli, Kaushik Bhattacharya, Andrew Stuart, and Anima Anandkumar.
 \newblock Fourier neural operator for parametric structural analysis.
-\newblock \emph{Computer Methods in Applied Mechanics and Engineering},
-  405:\penalty0 115868, 2023.
+\newblock \emph{Computer Methods in Applied Mechanics and Engineering}, 405:\penalty0 115868, 2023.
 
 \bibitem[Lu et~al.(2021)Lu, Meng, Mao, and Karniadakis]{Lu2021}
 Lu~Lu, Xuhui Meng, Zhiping Mao, and George~E Karniadakis.
@@ -121,122 +92,87 @@ Lu~Lu, Xuhui Meng, Zhiping Mao, and George~E Karniadakis.
 
 \bibitem[McClenny and Braga-Neto(2022)]{McClenny2022}
 Levi McClenny and Ulisses Braga-Neto.
-\newblock Self-adaptive physics-informed neural networks using a soft attention
-  mechanism.
+\newblock Self-adaptive physics-informed neural networks using a soft attention mechanism.
 \newblock \emph{arXiv preprint arXiv:2209.07644}, 2022.
 
-\bibitem[Mozaffar et~al.(2022)Mozaffar, Bostanabad, Chen, Ehmann, Cao, and
-  Bessa]{Mozaffar2022}
+\bibitem[Mozaffar et~al.(2022)Mozaffar, Bostanabad, Chen, Ehmann, Cao, and Bessa]{Mozaffar2022}
 M~Mozaffar, R~Bostanabad, W~Chen, K~Ehmann, J~Cao, and MA~Bessa.
 \newblock Physics-informed neural networks for plasticity in composites.
-\newblock \emph{Computer Methods in Applied Mechanics and Engineering},
-  393:\penalty0 114766, 2022.
+\newblock \emph{Computer Methods in Applied Mechanics and Engineering}, 393:\penalty0 114766, 2022.
 
-\bibitem[Niaki et~al.(2021)Niaki, Forghani, Nonn, Gierden, Schmidt, H{\"u}gle,
-  and Bergmann]{Niaki2021}
-Seyed Amir~Hosseini Niaki, Milad Forghani, Sebastian Nonn, Christian Gierden,
-  Felix Schmidt, Thomas H{\"u}gle, and Jean~Pierre Bergmann.
-\newblock Physics-informed neural network for modelling the thermochemical
-  curing process of composite-tool systems during manufacture.
-\newblock \emph{Computer Methods in Applied Mechanics and Engineering},
-  384:\penalty0 113959, 2021.
+\bibitem[Niaki et~al.(2021)Niaki, Forghani, Nonn, Gierden, Schmidt, H{\"u}gle, and Bergmann]{Niaki2021}
+Seyed Amir~Hosseini Niaki, Milad Forghani, Sebastian Nonn, Christian Gierden, Felix Schmidt, Thomas H{\"u}gle, and Jean~Pierre Bergmann.
+\newblock Physics-informed neural network for modelling the thermochemical curing process of composite-tool systems during manufacture.
+\newblock \emph{Computer Methods in Applied Mechanics and Engineering}, 384:\penalty0 113959, 2021.
 
 \bibitem[Pati and Chakraborty(2023)]{Pati2023}
 Abhishek Pati and Debraj Chakraborty.
-\newblock Noise-robust physics-informed neural networks for structural
-  identification.
+\newblock Noise-robust physics-informed neural networks for structural identification.
 \newblock \emph{Journal of Sound and Vibration}, 563:\penalty0 117867, 2023.
 
 \bibitem[Peng et~al.(2023)Peng, Zhang, and Chen]{Peng2023}
 Wei Peng, Jieqiang Zhang, and Jianguo Chen.
-\newblock Parareal physics-informed neural networks for real-time simulation of
-  structural dynamics.
+\newblock Parareal physics-informed neural networks for real-time simulation of structural dynamics.
 \newblock \emph{Engineering Structures}, 278:\penalty0 115508, 2023.
 
 \bibitem[Raissi et~al.(2019)Raissi, Perdikaris, and Karniadakis]{Raissi2019}
 Maziar Raissi, Paris Perdikaris, and George~E Karniadakis.
-\newblock Physics-informed neural networks: A deep learning framework for
-  solving forward and inverse problems involving nonlinear partial differential
-  equations.
-\newblock \emph{Journal of Computational Physics}, 378:\penalty0 686--707,
-  2019.
+\newblock Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations.
+\newblock \emph{Journal of Computational Physics}, 378:\penalty0 686--707, 2019.
 
-\bibitem[Samaniego et~al.(2020)Samaniego, Anitescu, Goswami, Nguyen-Thanh, Guo,
-  Hamdia, Zhuang, and Rabczuk]{Samaniego2020}
-E~Samaniego, C~Anitescu, S~Goswami, V~M Nguyen-Thanh, H~Guo, K~Hamdia,
-  X~Zhuang, and T~Rabczuk.
-\newblock An energy approach to the solution of partial differential equations
-  in computational mechanics via machine learning: Concepts, implementation and
-  applications.
-\newblock \emph{Computer Methods in Applied Mechanics and Engineering},
-  362:\penalty0 112790, 2020.
+\bibitem[Samaniego et~al.(2020)Samaniego, Anitescu, Goswami, Nguyen-Thanh, Guo, Hamdia, Zhuang, and Rabczuk]{Samaniego2020}
+E~Samaniego, C~Anitescu, S~Goswami, V~M Nguyen-Thanh, H~Guo, K~Hamdia, X~Zhuang, and T~Rabczuk.
+\newblock An energy approach to the solution of partial differential equations in computational mechanics via machine learning: Concepts, implementation and applications.
+\newblock \emph{Computer Methods in Applied Mechanics and Engineering}, 362:\penalty0 112790, 2020.
 
 \bibitem[Sharma et~al.(2022)Sharma, Singh, and Kumar]{Sharma2022}
 Rishikesh Sharma, Harsh Singh, and Manoj Kumar.
-\newblock Physics-informed neural networks for solving forward and inverse
-  problems in complex beam systems.
-\newblock \emph{Engineering Applications of Artificial Intelligence},
-  116:\penalty0 105398, 2022.
+\newblock Physics-informed neural networks for solving forward and inverse problems in complex beam systems.
+\newblock \emph{Engineering Applications of Artificial Intelligence}, 116:\penalty0 105398, 2022.
 
 \bibitem[Shen et~al.(2024)Shen, Zhu, and Duan]{Shen2024}
 Wei Shen, Yichao Zhu, and Huiling Duan.
-\newblock B-spline enhanced physics-informed neural networks for beam vibration
-  analysis.
-\newblock \emph{Mechanical Systems and Signal Processing}, 206:\penalty0
-  110879, 2024.
+\newblock B-spline enhanced physics-informed neural networks for beam vibration analysis.
+\newblock \emph{Mechanical Systems and Signal Processing}, 206:\penalty0 110879, 2024.
 
 \bibitem[Sun and Wang(2020)]{Sun2022}
 Luning Sun and Jian-Xun Wang.
-\newblock Surrogate modeling for fluid flows based on physics-constrained deep
-  learning without simulation data.
-\newblock \emph{Computer Methods in Applied Mechanics and Engineering},
-  361:\penalty0 112732, 2020.
+\newblock Surrogate modeling for fluid flows based on physics-constrained deep learning without simulation data.
+\newblock \emph{Computer Methods in Applied Mechanics and Engineering}, 361:\penalty0 112732, 2020.
 
 \bibitem[Viana et~al.(2024)Viana, Vaz~Jr, and Thompson]{Viana2024}
 Felipe~AC Viana, Milton Vaz~Jr, and Haydn Thompson.
-\newblock Neural operators for finite strain plasticity in structural
-  engineering.
-\newblock \emph{Finite Elements in Analysis and Design}, 227:\penalty0 104025,
-  2024.
+\newblock Neural operators for finite strain plasticity in structural engineering.
+\newblock \emph{Finite Elements in Analysis and Design}, 227:\penalty0 104025, 2024.
 
 \bibitem[Wang et~al.(2023)Wang, Kashinath, Mustafa, Albert, and Yu]{Wang2023}
 Rui Wang, Karthik Kashinath, Mustafa Mustafa, Adrian Albert, and Rose Yu.
-\newblock Bayesian physics-informed neural networks for real-world nonlinear
-  dynamical systems.
-\newblock \emph{Computer Methods in Applied Mechanics and Engineering},
-  402:\penalty0 115346, 2023.
+\newblock Bayesian physics-informed neural networks for real-world nonlinear dynamical systems.
+\newblock \emph{Computer Methods in Applied Mechanics and Engineering}, 402:\penalty0 115346, 2023.
 
 \bibitem[Wang et~al.(2021)Wang, Teng, and Perdikaris]{Wang2021}
 Sifan Wang, Yujun Teng, and Paris Perdikaris.
-\newblock Understanding and mitigating gradient pathologies in physics-informed
-  neural networks.
-\newblock \emph{SIAM Journal on Scientific Computing}, 43\penalty0
-  (5):\penalty0 A3055--A3081, 2021.
+\newblock Understanding and mitigating gradient pathologies in physics-informed neural networks.
+\newblock \emph{SIAM Journal on Scientific Computing}, 43\penalty0 (5):\penalty0 A3055--A3081, 2021.
 
 \bibitem[Yang et~al.(2023)Yang, Meng, and Karniadakis]{Yang2023}
 Liu Yang, Xuhui Meng, and George~E Karniadakis.
-\newblock Multi-resolution physics-informed neural networks for
-  high-dimensional problems.
+\newblock Multi-resolution physics-informed neural networks for high-dimensional problems.
 \newblock \emph{Journal of Computational Physics}, 491:\penalty0 112369, 2023.
 
 \bibitem[Yu et~al.(2023)Yu, Zhao, and Wang]{Yu2023}
 Yue Yu, Jun Zhao, and Hao Wang.
-\newblock Physics-informed recurrent neural networks for structural health
-  monitoring.
-\newblock \emph{Mechanical Systems and Signal Processing}, 186:\penalty0
-  109850, 2023.
+\newblock Physics-informed recurrent neural networks for structural health monitoring.
+\newblock \emph{Mechanical Systems and Signal Processing}, 186:\penalty0 109850, 2023.
 
 \bibitem[Zhang et~al.(2020)Zhang, Yin, and Karniadakis]{Zhang2020}
 Enrui Zhang, Ming Yin, and George~E Karniadakis.
-\newblock Physics-informed neural networks for inverse problems in structural
-  engineering.
-\newblock \emph{Structural and Multidisciplinary Optimization}, 62:\penalty0
-  2587--2606, 2020.
+\newblock Physics-informed neural networks for inverse problems in structural engineering.
+\newblock \emph{Structural and Multidisciplinary Optimization}, 62:\penalty0 2587--2606, 2020.
 
 \bibitem[Zhang and Liu(2024)]{Zhang2024}
 Rui Zhang and Yongming Liu.
 \newblock Multi-scale fem-pinn framework for large-scale structural analysis.
-\newblock \emph{Computer Methods in Applied Mechanics and Engineering},
-  418:\penalty0 116534, 2024.
+\newblock \emph{Computer Methods in Applied Mechanics and Engineering}, 418:\penalty0 116534, 2024.
 
 \end{thebibliography}
