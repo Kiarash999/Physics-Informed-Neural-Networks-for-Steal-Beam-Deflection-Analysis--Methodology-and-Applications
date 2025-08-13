@@ -1,7 +1,0 @@
-PWD /home/kiarash/work/Papers/Paper 9 Cantilever/_
-INPUT /etc/texmf/web2c/texmf.cnf
-INPUT /usr/share/texmf/web2c/texmf.cnf
-INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
-INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/kiarash/work/Papers/Paper 9 Cantilever/_/_.tex
-OUTPUT _.log
