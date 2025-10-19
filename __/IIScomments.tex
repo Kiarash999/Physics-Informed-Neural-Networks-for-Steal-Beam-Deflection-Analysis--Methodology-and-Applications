@@ -1,0 +1,527 @@
+% An example for the ar2rc document class.
+% Copyright (C) 2017 Martin Schroen
+% Modifications Copyright (C) 2020 Kaishuo Zhang
+%
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+\documentclass{ar2rc}
+
+\title{Unveiling the Hidden Impact: Long-Term Creep Effects on High Concrete Arch Dams - A Paradigm Shift in Structural Analysis and Design}
+%\author{H. Mirzabozorg, S. Ebadi}
+\journal{Innovative Infrastructure Solutions}
+\doi{}
+
+\begin{document}
+	
+	\maketitle
+
+	\section{Reviewer \#1}
+	
+	\RC This manuscript presents an in-depth analysis of long-term creep effects on high concrete arch dams, using the Karun 1 dam in Iran as a case study. The authors employ a comprehensive approach, combining experimental data,
+	thermal analysis, and structural modeling to evaluate the impact of creep on dam behavior over a 28-year period. The	study makes several important contributions, including:\\
+	1. Demonstrating that creep effects are significant and cannot be ignored in long-term structural analysis of concrete arch dams.\\
+	2. Showing that the presence of vertical contraction joints amplifies the impact of creep on stress relaxation.\\
+	3. Revealing that the common practice of using a reduced modulus of elasticity to account for creep effects is inadequate for capturing long-term deformation and stress patterns.\\
+	The research methodology is sound, with careful calibration of thermal and structural models against field instrumentation	data. The results provide valuable insights into the long-term behavior of concrete arch dams and challenge some existing	design practices. However, there are opportunities to strengthen the discussion of practical implications and address some
+	limitations in the current analysis. Overall, this study represents a significant contribution to the field of dam engineering and structural analysis of large concrete structures.
+	
+	\AR We appreciate the reviewer’s positive feedback regarding our manuscript and the acknowledgment of its contributions.
+	
+	\subsection{Comment 1}
+	
+	\RC The introduction provides a good overview of creep effects in concrete dams, but could benefit from a more detailed discussion of recent advances in creep modeling for large concrete structures. How does this work specifically advance the state of the art in long-term analysis of arch dams?
+	
+	\AR This study aims primarily to emphasize the importance of creep effects on the long-term structural behavior of arch dams rather than merely focusing on advancements in creep modeling. While recent research on creep models is indeed significant, our investigation explicitly addresses the need for robust long-term creep analyses for modern high concrete arch dams. In the initial version of our paper, we included a comprehensive overview of existing literature on creep models and their implications; however, we found that the focus on the numerical study of creep effects in high arch dams was lacking. Consequently, we opted to streamline the introduction to focus on the specific challenges and knowledge gaps in the long-term analysis of arch dams due to creep. This was emphasized in the revised version by adding the following sentences to the last lines of the first paragraph in the section of "Introduction":
+	
+	"Recent advancements in material investigations, such as those highlighted in the studies cite{...}, stress various approaches to modeling creep behavior and its long-term effects on developing materials. This study primarily aims to emphasize the significance of creep effects on the long-term structural behavior of arch dams rather than solely focusing on the advancements in creep modeling. As such, it positions current literature in the context of the creep effects on infrastructure, particularly regarding concrete dams."
+	
+
+	\AR On the creep effect on large concrete structures, there are some points in the introduction section, like by Truman et al. (1991), TRB Executive Committee (2006), Abdulrazeg et al. (2010), and Serra et al. (2012).  
+	
+	
+	\subsection{Comment 2}
+	
+	\RC In the thermal calibration section, you state "By changing these parameters within the allowed and defined range, the thermal analysis results are compared with the readings of thermometers installed on the dam body." Can you provide	more details on the specific criteria used to determine the "best fit" between model predictions and thermometer readings?
+	
+
+	\AR We would like to thank the reviewer for this insightful comment. In our analysis, we utilized the Mean Absolute Error (MAE) as a key criterion for comparing the thermal analysis results with the thermometer readings. The MAE is the average of the absolute differences between the calculated values from our model and the observed values from the thermometers, providing a clear measure of fit.
+	
+	To enhance clarity, we have updated Table 3 to include the MAE for each trial, allowing for a more transparent comparison of the model predictions against the measured data. This approach ensures that we can systematically evaluate the accuracy of our thermal calibration.
+	
+	In addition, the following sentences were added to the first line of the last paragraph on page 8:
+	
+	"In the current study, mean absolute error (MAE) as the average of the absolute differences between the calculated values from the numerical model and the observed values from the thermometers, has been used as the error-index and considering this parameter as reported in Table 3, the fifth trial gives the best fit."
+	
+	instead of the deleted sentences of:
+	
+	"According to the statistical studies carried out in the selected period, the fifth analysis matches the recorded data of thermometers."
+	
+	These changes have been marked in the revised version of the manuscript.
+	
+	Thank you again for your valuable feedback.
+	
+	\subsection{Comment 3}
+	\RC The manuscript mentions "For thermal calibration, the coefficient of thermal conductivity in concrete, the coefficient of convection of air and water in the vicinity of concrete, and the effect of sunlight on the downstream surface in the form of heat increase have been considered as variables." How sensitive are the results to variations in these parameters? A
+	sensitivity analysis could provide valuable insights into the robustness of the calibration.
+	
+	\AR We appreciate the reviewer’s suggestion regarding the sensitivity of our results to variations in the thermal parameters.
+	
+	As indicated in Table 3, the coefficients of thermal conductivity and specific heat for mass concrete are defined within specific ranges. In our preliminary sensitivity analysis, we performed limited adjustments to these parameters to minimize the Mean Absolute Error (MAE)
+	
+	While this analysis provides some insights, it is important to note that a comprehensive sensitivity analysis, which would involve a more extensive optimization process to further reduce the error index, was beyond the scope of this study. However, we believe that the accuracy achieved in our calibration is sufficient for practical applications in the structural analysis of concrete arch dams
+
+	Thank you for your valuable input.
+	
+	   
+	\subsection{Comment 4}
+	\RC In Figure 6, the temperature comparisons between thermometer readings and finite element results show some discrepancies. Can you elaborate on the potential sources of these differences and their implications for the overall
+	analysis?
+	
+	\AR	We appreciate the reviewer’s inquiry regarding the discrepancies observed in Figure 6.
+	
+	Several factors may contribute to these differences between thermometer readings and finite element model predictions. First, inherent uncertainties in material characteristics, as noted during the calibration process, can influence the accuracy of the thermal analysis. Additionally, assumptions made in Bofang's method—specifically the use of yearly harmonic variables to determine thermal variations at different depths of the reservoir—may not fully capture the complexities of real-world conditions.
+	
+	Other potential sources of discrepancy include the effects of solar radiation, engineering errors associated with thermometer calibrations, and variations in measurement accuracy. Given our extensive experience of over 20 years in dam engineering, we recognize that while achieving perfect alignment between model predictions and field data may be challenging, obtaining reliable trends and maintaining reasonable error indices in thermal calculations are sufficient for practical applications in this context.
+	
+	The source of errors were discussed in the added section of 6.2 to the revised manuscript.
+	
+	Thank you for highlighting this important aspect of our analysis.    
+		
+	\subsection{Comment 5}
+	\RC The study uses the Norton formulation to model creep behavior. How might the results differ if other creep models (e.g., B3 or MAAEM) were used? This could be an important consideration for generalizing the findings to other dam
+	projects.
+	
+	\AR We appreciate the reviewer’s insightful question regarding the potential impact of using different creep models, such as B3 or MAAEM, in our study.
+
+	The primary objective of our work is to evaluate the effects of creep on the long-term structural behavior of a super-high concrete dam. While numerous mathematical creep models exist in the literature, the differences among them are not substantial enough to drastically alter the trends observed in our study.
+
+	In our analysis, we calibrated the numerical results with actual pendulum readings from the dam. Therefore, should we have employed another creep model, we would still need to calibrate the results against the same real data, which may lead to variations in the percentage of stress reduction. However, these variations are unlikely to be significant, as the different mathematical models tend to yield similar outcomes overall.
+
+	Ultimately, while different models may lead to slight variations in stress levels, we believe that the core conclusions of our study would remain unchanged.
+	
+	It is worth noting that the guides recommend MAAEM (as pointed out in the introduction). This method is examined in the current study, and its results are compared to our work (see section 6.1)
+		
+	\subsection{Comment 6}
+	\RC In the structural calibration section, you mention "Finally, the mechanical parameters of the materials for the body are obtained as described in Table 4." How do these calibrated parameters compare to typical values used in dam design? Are	there any unexpected values that warrant further discussion?
+		
+	\AR The calibrated parameters are indeed within the practical range for mass concrete, particularly for structures that have been in service for over 30 years. However, it's important to note that these parameters should not be directly applied during the design phase of new dams. Each concrete dam is shaped by its specific environmental conditions, construction quality, curing practices, and operational history, all of which are unique to that structure.
+	
+	As the reviewer rightly pointed out, this study emphasizes the significance of creep in the re-evaluation of older concrete dams. The effects of creep should not be factored into the design stage; rather, they should be considered as part of the structural reserve capacity when assessing the safety and integrity of existing structures (please see the added section 7.2).
+	
+	Thank you for your valuable feedback, which enhances the discussion of these critical aspects.
+	
+	\subsection{Comment 7}
+	\RC The manuscript states "According to what can be seen, applying creep effect in the finite element model completely changes the deformation pattern of the body in both cases of bodies having contraction joints and without the vertical joints." Can you provide a more detailed analysis of how creep affects the load distribution within the dam structure,	particularly at the dam-foundation interface?
+	
+	\AR Upon calibration of the structural model, we indeed have the capability to post-process and extract a wide range of results. We are willing to provide the complete model and relevant results upon request from the reviewer or any interested readers.
+	
+	However, we must note that including a detailed representation of load redistribution within the manuscript would significantly expand its length and complexity. This would risk transforming the paper into a technical report rather than an academic manuscript.
+		
+	\subsection{Comment 8}
+	\RC In Figure 9, the displacement trends for the model including creep show better agreement with the pendulum data. However, there are still some discrepancies. What factors might account for these remaining differences?
+		
+	\AR We appreciate the reviewer’s thoughtful inquiry regarding the discrepancies observed in Figure 9, despite the improved agreement of the model including creep with the pendulum data.
+	
+	As highlighted during the calibration of the thermal model, there are multiple sources of errors and uncertainties that can influence the results. In the calibration of infrastructures such as concrete dams, it is common to encounter differences between finite element model predictions and actual data obtained from pendulum readouts. The primary uncertainties in structural calibration generally stem from material properties and the behavior of the foundation rock.
+	
+	At last, while it is crucial to capture both the trend and the range of displacement data, some discrepancies may remain inherent due to these uncertainties. We believe that the trends observed in our study provide valuable insights into the behavior of the dam under long-term loading conditions (please read the added section 6.2).
+	
+	Thank you for your valuable feedback, which helps clarify these important aspects.
+		
+	\subsection{Comment 9}
+	\RC	The study focuses on a single case study (Karun 1 dam). How might the conclusions differ for dams with different geometries, loading conditions, or environmental factors? This could be important for generalizing the findings to other projects.	
+	
+	\AR As previously mentioned, our work highlights that the guidelines advocating for consideration of long-term structural behavior in concrete dams may not be universally applicable. We assert that this finding holds true for many older concrete arch dams. However, it is essential to recognize that the percentage of stress release is highly dependent on specific case conditions. Hence, we emphasize the case study in the title of the manuscript.
+	
+	The identification of a contrary instance to the recommendations made by existing guidelines serves as a significant alert for both academia and practitioners to reevaluate the implications of these guidelines. However, we advise against generalizing the results derived from this specific case, emphasizing the need for further investigations in diverse contexts.
+	
+	For more clarifying, the section of concluding remarks were divided in two subsections that are "Findings" and "Generality" and the following statements were added in the "Generality" subsection:
+	
+	"The authors emphasize that the generality of our findings regarding the long-term structural behavior of concrete dams should be approached with caution. As previously mentioned, our work highlights that the guidelines advocating for consideration of long-term structural behavior in concrete dams may not be universally applicable. We assert that this finding holds true for many older concrete arch dams. However, it is essential to recognize that the percentage of stress release is highly dependent on specific case conditions, which is why we chose to emphasize the case study in the title of the manuscript.
+	
+	The identification of a contrary instance to the recommendations made by existing guidelines serves as a significant alert for both academia and practitioners to reevaluate the implications of these guidelines. Nevertheless, we advise against generalizing the results derived from this specific case, as further investigations are necessary to explore the effects of creep in diverse contexts. This emphasizes the critical need for a more nuanced understanding of the factors influencing the structural integrity and safety of concrete dams."
+		
+	\subsection{Comment 10}
+	\RC You conclude that "Using the sustained modulus of elasticity instead of the instantaneous modulus of elasticity, which	the international guidelines recommend, is examined in this study. It is observed that this recommendation could not accurately predict the creep effect on deformation and stress release." What specific recommendations would you make for revising current guidelines based on your findings?
+		
+	\AR The authors have addressed this important point in the newly added last section of the "Concluding Remarks." In this section, we highlight the need for a comprehensive reevaluation of the recommendation to use the sustained modulus of elasticity in modeling creep effects. This emphasizes that current guidelines should be updated to better account for the complexities of long-term structural behavior in concrete dams.
+		
+	\subsection{Comment 11}
+	\RC The manuscript mentions "It should be noted that for the secondary creep modelling, the construction time is four years, and after that, the creep modelling is initiated." How sensitive are the results to this assumption about the onset of creep? Could earlier onset of creep during construction significantly affect the long-term behavior?
+	
+	\AR We appreciate the reviewer’s question regarding the sensitivity of the results to the assumption about the onset of creep modeling.
+	
+	In fact, after approximately 4 to 5 years of operation, the structural behavior of concrete arch dams tends to stabilize. The case studied in this investigation follows this trend, as evidenced by the initial stages of the pendulum readout data, which reflect unstable behavior during the early years. By the time the modeling for creep begins, we are beyond this initial phase, making it reasonable to expect stable long-term behavior thereafter (read the first paragraph on page 5 and the last lines of the first paragraph in section 5.2).
+	
+	Our focus is on capturing the long-term behavior of the dam, which stabilizes following the first impounding, after the initial instabilities induced by the foundation rock and other factors have subsided. As such, considering the effects of creep during the construction stage and examining the early stages of creep lies beyond the scope of this current study.
+	
+	\subsection{Comment 12}
+	\RC	In Figure 15, the stress contours for the dam body with vertical joints show significant differences between the cases with and without creep. Can you provide a more detailed explanation of the mechanisms leading to these differences, particularly in the context of joint behavior?
+	
+	\AR Focusing on the legend, it is evident that the creep effect results in a release of compressive stress, leading to a redistribution of stressed within the structure. While overall stress patterns remain similar, the levels of stresses differ considerably between the two scenarios, which accounts for the observed variations. This phenomenon is akin to what occurs in models without joints, though the effects are more pronounced when joints are included, as detailed in the text.
+	
+	
+	\subsection{Comment 13}
+	\RC The study considers a 28-year operational period. How might the conclusions change if an even longer time frame (e.g., 50 or 100 years) were considered? This could be particularly relevant for long-term dam safety assessments.
+	
+	\AR This study examines the effects of creep over a 28-year operational period. Extending this time-frame to 50 or even 100 years is unlikely to result in abrupt changes to the calibrated parameters. However, it is expected that the magnitude of stress release would increase modestly over such extended periods, consistent with the behavior of creep. So, the general concluding remarks stay the same due to a more extended period of operation. Such long-term assessments could provide valuable insights for ongoing evaluations of dam safety and structural integrity.
+	
+	
+	\subsection{Comment 14}
+	\RC The authors could enhance their study by incorporating perspectives from recent related research:\\
+	https://doi.org/10.3390/ma15207098;\\ https://doi.org/10.1016/j.conbuildmat.2023.132604;\\
+	https://doi.org/10.1016/j.istruc.2022.11.002;\\ https://doi.org/10.3390/su15043085
+	
+	\AR We were added the following statements to the last line of the first paragraph in introduction section, as marked up in the revised version, and all requested citations were included in the manuscript:
+
+	"Recent advancements in material investigations, such as those highlighted in the studies cite{...}, stress various approaches to modeling creep behavior and its long-term effects on developing materials. This study primarily aims to emphasize the significance of creep effects on the long-term structural behavior of arch dams rather than solely focusing on the advancements in creep modeling. As such, it positions current literature in the context of the creep effects on infrastructure, particularly regarding concrete dams."	
+	
+	\subsection{Comment 15}
+	\RC	Given the results of your study, what recommendations would you make for the design and analysis of new concrete	arch dams? How might existing dams be reassessed in light of these findings on long-term creep effects?
+	
+	\AR The authors were addressed this comment in detail in responses to Comments 6 and 10 (see the added section of 7.2).
+	
+	
+	\newpage
+	\section{Reviewer \#2}
+	\RC The manuscript is well-structured, logically progressing from the introduction to detailed analyses and conclusions. However, to improve the readability and impact, consider the following:
+	
+	\AR We appreciate your positive feedback regarding the structure and logical progression of the manuscript.
+	
+	We are grateful for your suggestions aimed at enhancing readability and impact. We carefully considered your recommendations and made the necessary revisions to improve clarity, flow, and engagement for our readers. Specific attention was paid to the organization of sections, the use of concise language, and the incorporation of visual aids where appropriate.
+	
+	\subsection{GENERAL OVERVIEW 1}
+	\RC	The structure is well-organized, following a logical flow from the introduction to methodology, case study, and conclusions. However, the flow and cohesion could be improved in certain sections. For instance, the transition between thermal calibration and structural analysis needs to be smoother by providing a summary of findings from the former. I recommend
+	to briefly summarize the findings of the thermal calibration before moving on to the structural impact.
+	
+	\AR We appreciate your valuable feedback regarding the transition between the thermal calibration and structural analysis sections. To address this, we have enhanced the last paragraph of the thermal calibration section with the following addition:
+	
+	"The thermal analysis results for the dam body serve as crucial input for the subsequent structural analysis. These thermal conditions, combined with other operational loads, are utilized to calculate the structural response at specific time intervals. With the thermal calibration complete, the next logical step is to proceed with the structural calibration, which is essential for understanding the long-term behavior of the dam."
+	
+	This addition aims to provide a smoother transition and a brief summary of the thermal calibration findings before delving into the structural analysis, as per your recommendation.
+
+
+	\subsection{REVIEW 2}
+	\subsubsection{Introduction}
+	\RC The background is adequate but could be clearer with a problem statement and research objectives. Clearly define research gaps and contributions.
+	
+	\AR Regarding the comments of Reviewer 1, We added the following statements to the last line of the first paragraph in introduction section, as noted in the revised version:
+	
+	"Recent advancements in material investigations, such as those highlighted in the studies \cite{ma15207098,KAKASORISMAELJAF2023132604,EMAD20221243,su15043085}, stress various approaches to modeling creep behavior and its long-term effects on developing materials. This study primarily aims to emphasize the significance of creep effects on the long-term structural behavior of arch dams rather than solely focusing on the advancements in creep modeling. As such, it positions current literature in the context of the creep effects on infrastructure, particularly regarding concrete dams."
+	
+	These statements clarify the objectives of the study and its position in the literature.
+	
+	\subsubsection{Creep Formulation}
+	
+	\RC Equations are accurate but lack intuitive explanations. For instance, the equations could be accompanied by more intuitive explanations and provide practical implications. This may include a brief discussion on how 
+	each parameter influences the creep behavior would enhance understanding.
+	
+	\AR The following sentences were added to the manuscript just after equation 4:
+	
+	"It is noteworthy that the Norton formulation of creep is a widely used model in materials science, particularly in the analysis of how materials deform under prolonged stress over time. The power law relationship, where the strain rate increases with the applied stress raised to an exponent, portrays the idea that higher stresses lead to significantly higher rates of creep. The parameters $A$ and $n$ are properties intrinsic to the material being tested. For instance, materials with a low $n$ value exhibit less sensitivity to increases in stress than materials with a high $n$ Norton1929."
+	
+	In addition, the following primary reference was added to the paper:
+	
+	@article{Norton1929,
+		title={Creep of Materials},
+		author={Norton, L. R.},
+		journal={Journal of Applied Physics},
+		volume={5},
+		pages={25--41},
+		year={1929},
+		publisher={American Institute of Physics}}
+	
+	
+	\subsubsection{Numerical Model Setup}
+	
+	\RC Setup is detailed and well-described, but additional visual aids (flowcharts) would aid comprehension. Additionally, discussing potential limitations or assumptions made in the model would add depth to the analysis.
+	
+	\AR A flowchart was formed and added to section 3. In addition, the following sentences were added to the last line of this section:
+	
+	"The flowchart presented in Fig. \ref{Fig:flowchart} clarifies the overall flow of making model setup in the current study."
+	
+	In addition, the section of "Discussion" was divided to the two subsections and the following sentences were added:
+	
+	"As illustrated in Fig. \ref{Fig:fig10}, discrepancies exist between temperature measurements from thermometers and those predicted by finite element analysis. Several factors could contribute to these differences. Primarily, intrinsic uncertainties related to the material properties, which were observed during the calibration process, can significantly affect the accuracy of the thermal analysis. Additionally, Bofang's method Bofang1997 relies on assumptions—particularly the use of yearly harmonic variables to estimate thermal variations at various depths in the reservoir—that may not fully accommodate the complexities of real-world conditions.
+	
+	Other potential sources of variability include the influence of solar radiation, engineering errors associated with thermometer calibrations, and inconsistencies in measurement precision. Drawing upon over 20 years of experience in dam engineering, it is acknowledged that while achieving perfect alignment between model predictions and real-world data is often difficult, deriving reliable trends while maintaining acceptable error margins in thermal calculations is generally sufficient for practical applications.
+	
+	Furthermore, as shown in Fig. \ref{Fig:fig14}, the displacement trends from the model that includes creep demonstrate a favorable correlation with the data obtained from pendulum readings. Nonetheless, some discrepancies persist. As previously emphasized, multiple sources of errors and uncertainties can affect these results. In the calibration of infrastructure, such as concrete dams, it is not uncommon to observe differences between predictions from finite element models and actual pendulum measurements. The main uncertainties in structural calibration often arise from variations in material properties (including creep parameters resulted from test data) and the behavior of the foundation rock. Ultimately, while it is essential to capture both the overall trend and the range of displacement data, some discrepancies may remain unavoidable due to these inherent uncertainties."
+	
+	\subsubsection{Thermal Calibration}
+	
+	\RC Data is comprehensive, but further details on boundary conditions (even though it is described and further presented in Section 
+	
+	\AR for thermal analysis, Figure 4 was added to the paper. in addition, the following sentences was added to the first paragraph of section 4:
+	
+	"{Fig. \ref{Fig:thermalboundary} shows the boundary conditions applied to the model schematically."
+	
+	\subsubsection{Structural Calibration}
+	
+	\RC with pictorial representation and assumptions could improve the
+	analysis.
+	
+	\AR For structural analysis, Figure 11 was added and referred in section 5.1 as marked. 
+	
+	\subsubsection{Structural Calibration and Creep Effect}
+	
+	\RC Analysis is robust and the discussion on the impact of creep on stress
+	distribution is well-supported by data, however, the analysis of the vertical contraction joints could be expanded. A comparison with similar studies would contextualize findings. Therefore, consider comparing the findings with other similar studies (if any) to provide a broader context.
+
+	\AR We appreciate the reviewer's insightful comment regarding the analysis of vertical contraction joints and the suggestion for comparative studies. We would like to address these points as follows:
+
+	Scope and focus of the study:
+
+	The primary objective of our research was to evaluate the effects of creep on the long-term structural behavior of a super-high concrete dam. While our calibrated finite element model can indeed generate numerous results, we had to maintain a focused approach to preserve the academic nature of the manuscript.
+
+	Limitations in expanding the analysis:
+
+	We acknowledge the potential value in expanding the analysis of vertical contraction joints. However, including a detailed representation of all structural features, including joint behavior, would significantly increase the length and complexity of the paper. Our concern was that such an expansion might transform the manuscript into a technical report rather than an academic article.
+
+	Comparative studies:
+
+	Regarding the suggestion to compare our findings with similar studies, we face a challenge due to the scarcity of comparable numerical studies in the existing literature. As noted in our introduction, we have already incorporated all available relevant data for comparison.
+
+	We appreciate the reviewer's suggestion and recognize the potential value it could add to our study. For future work, we will consider conducting a more comprehensive analysis of vertical contraction joints and actively seek out emerging research for comparative analysis as the field evolves.
+
+	\subsection{FIGURES, TABLES \& EQUATIONS}
+	\subsubsection{Figures}
+
+
+	\RC Clear but some lack detailed captions and labels. Include more descriptive captions. The resolution of Figure 16 and 17 is quite low, and high contrast in colors for the plots would be beneficial for better description and comparison.
+
+	\AR Figures 16 and 17 (Figures 19 and 20 in the revised version) were modified to have higher contrast. 
+	
+	All the figures' captions were considered and revised (if needed).
+ 
+	\subsubsection{Tables}
+	
+	\RC Well-organized but require better labeling for clarity. Similar to the case of some figures, consider renaming certain tables to reflect their content more accurately. For example, instead of "Table 1: Longitudinal Strains for Mix No. II"	you may use "Table 1: Longitudinal Strains of Concrete Mix II under Applied Stress."
+
+	\AR All the tables were considered and improves. 
+
+	\subsubsection{Equations}
+	\RC Correctly formulated but need expanded context in real-world applications.
+	
+	\AR Done. Please see the added paragraph after equation 4.
+
+	\subsection{ANALYSES, DISCUSSIONS \& RECOMMENDATIONS}
+	
+	\RC The analysis is thorough, but the discussion on stress relaxation and displacement could be enhanced by including a comparison with field data and or case studies from other dams. Practical recommendations would be beneficial. While the manuscript touches on the implications of the findings, including suggestions and recommendations on how to handle creep
+	in future structural assessments, incorporate creep effects into existing design standards or maintenance strategies would add value.
+	
+	\AR We appreciate the insightful comment regarding the analysis of stress relaxation and displacement. However, obtaining reliable field data for the stress or strain of concrete dams remains a significant challenge. The embedded gauges in concrete are often locally sensitive, and as such, there is a lack of reliable data for these parameters during the long-term operations of older dams.
+
+	In the introduction, we have referenced existing data from prior investigations, including works by Kiziriya and Madzagua (1969) and the TRB Executive Committee (2006). The percentage of creep effects indicated in these studies aligns closely with the findings of our research.
+
+	To address the need for practical recommendations, we included new subsections titled "6.2 Limits and Shortcomings" and "7.2 Generality" in the manuscript, as indicated. We believe these additions enhance the discussion by providing greater insight into the implications of our findings and potential strategies for future structural assessments.
+	   
+	
+	
+	\subsection{CONCLUSION \& RECOMMENDATIONS FOR IMPROVEMENT}
+	\RC The conclusion summarizes the key findings of the study. However, it could be more succinct. Consider adding a brief statement on the broader implications of the research, such as its potential impact on future structural assessments or design codes. I suggest to do the following:\\
+	a. Clarify the research gap and contribution.\\
+	b. Enhance the clarity of technical explanations by providing more context where possible.\\
+	c. Include more visual aids (diagrams, flowcharts) to illustrate complex processes and findings.\\
+	d. Expand the discussion on the practical implications of the findings and provide recommendations on how engineers can apply these insights in practice.\\
+	e. Compare the results with similar studies to highlight the novelty and significance of the research.
+	
+	\AR The following paragraph was added to the section 7 as the first paragraph: 
+	
+	"The current study investigates the long-term effects of creep in high concrete arch dams, explicitly focusing on the Karun I dam as a case study. It addresses the critical research gap regarding the impact of mass concrete creep during operation periods, an area that has yet to be significantly overlooked in the existing literature. This research elucidates how ignoring the effects of creep can lead to erroneous assessments of stress and structural integrity in concrete dams. This is particularly pertinent given that international guidelines often inadequately address these factors, emphasizing the unique contribution of this study to the field. By utilizing experimental creep data, pendulum readouts data, and advanced structural analysis techniques, the study offers a comprehensive explanation of why traditional modeling methods fall short in predicting the behavior of concrete arch dams under sustained loads. Our findings emphasize the necessity for engineering practices to move beyond conservative assumptions regarding creep, indicating a shift toward more accurate modeling."
+	
+	As pointed out before, the manuscript was amended to include some figures and a flowchart to clarify the methodology and other issues.
+	
+	About comparing with similar investigations, the respective reviewer referred to the previous comment's response.
+	
+	At last, some recommendations were made in subsection 7.2. 
+	
+	
+	\newpage
+	\section{Reviewer \#3}
+	\RC The manuscript is well-written and fits within the scope of the Journal. However, there are several deficiencies in the paper and that is why this reviewer recommends MAJOR REVISIONS for this paper to be considered for publication in this Journal. The authors may attend to the following major and minor comments.
+	
+	\AR Thank you for your constructive feedback on our manuscript. We sincerely appreciate your positive remarks regarding the writing quality and the alignment of our paper with the journal's scope. We acknowledge your suggestion for major revisions and are committed to addressing the deficiencies you have identified.
+	
+	\subsection{Major Comments}
+	\subsubsection{Comment 1}
+	\RC The abstract effectively introduces the topic but can benefit from a clearer articulation of the main findings and implications. While it mentions stress relaxation and its impact on the	structural modeling of dams, the conclusion is somewhat abrupt and lacks a direct connection to the broader research context.
+	
+	\AR The abstract was rewritten as follows:
+	
+	"Long-term creep in concrete induces significant stress release, which is a critical consideration for the maintenance strategies of concrete dams. This study examines the effects of creep on the structural behavior of high concrete arch dams, focusing on Karun I as a detailed case study. By applying Norton formulation parameters obtained from experimental creep data, we performed a comprehensive set of thermal and structural analyses calibrated with real-time data from instruments installed in the dam. Our findings reveal that neglecting the effects of creep can lead to substantial inaccuracies in structural modeling, particularly when contraction joints are included, which amplify the impact of creep. We conclude that existing international guidelines inadequately account for the creep phenomenon, emphasizing the need for updated models in evaluating the structural integrity of older concrete arch dams. This research has important implications for improving codes and maintenance practices, ultimately enhancing the safety and longevity of concrete infrastructure."
+	
+	\subsubsection{Comment 2}
+	\RC The introduction section, while providing a background on creep, should expand on the broader implications of creep beyond dam maintenance, linking it more strongly to long-term safety and environmental considerations.
+	
+	\AR As pointed out in the previous comments, there are few works on this subject. Obviously, the creep effect in the long-term operation of concrete dams impacts their safety and, so, the maintenance-related decision-making (if needed). In this regard, several sentences have been added to the revised version (specifically section 7.2), focusing on the reevaluation of old dams (that means safety evaluation). However, there is no sentence relating to the maintenance of dams in the introduction section. So, to satisfy the comment, the following sentence was added to the last paragraph in the introduction as marked in the revised version:
+	
+	"..so, safety assessment of old concrete dams.."
+	
+	\subsubsection{Comment 3}
+	\RC Some technical terms, such as "Norton formulation" and "curve-fitting techniques," are introduced without adequate explanation, especially for readers who might not be experts in	creep mechanics. A brief explanation or reference to more foundational concepts may be helpful in broadening accessibility.
+	
+	\AR For Norton formulation, a paragraph was added to the manuscript just after equation 4 adding a primary reference as cited in the text. 
+	
+	\AR The following two references were added to the text for citing the curve fitting techniques:
+	
+	@book{Guest2012,
+		author    = {Guest, P. G.},
+		title     = {Numerical Methods of Curve Fitting},
+		publisher = {Cambridge University Press},
+		year      = {2012},
+		series    = {Cambridge Academic},
+		address   = {Cambridge}
+	}
+	
+	
+	@article{Yi2006, 
+		title={Static Calibration Methodology for Resistance Strain Measure System Base on FEM and Characteristic Curve Fitting}, 
+		url={https://www.semanticscholar.org/paper/2c73ee6fc18a989faf2116f0067abe2a88896d58}, 
+		author={Yi, C.}, 
+		year={2006}, 
+		month=jan 
+	}
+	
+	\subsubsection{Comment 4}
+	\RC	The transitions between the sections, particularly from the case study introduction (Karun 1 dam) to numerical modeling, feel disjointed. A smoother flow with clearer connections between the dam's physical characteristics and how these influence the modeling approach would enhance readability.
+	
+	\AR In the revised version of the manuscript, we incorporated additional sentences between sections and subsections, as highlighted in the markup. Furthermore, we have included some figures, such as Figures 4 and 11, as well as the flowchart in Figure 3, to facilitate smoother transitions and enhance connections between the physical characteristics of the Karun 1 dam and the corresponding modeling approach.
+	
+	We appreciate your feedback, which has greatly contributed to improving the readability of the manuscript.
+	
+	\subsubsection{Comment 5}
+	\RC	The manuscript relies heavily on the Norton formulation for creep analysis. However, it lacks	a detailed comparison of the chosen model against alternative models (e.g., power-law models, empirical models from recent studies). This omission can weaken the justification for	choosing the Norton model over others
+	
+	\AR As pointed out previously, the primary objective of our work is to evaluate the effects of creep on the long-term structural behavior of a super-high concrete dam. While numerous mathematical creep models exist in the literature, the differences among them are not substantial enough to drastically alter the trends observed in our study.
+	
+	In our analysis, we calibrated the numerical results with actual pendulum readings from the dam. Therefore, should we have employed another creep model, we would still need to calibrate the results against the same real data, which may lead to variations in the percentage of stress reduction. However, these variations are unlikely to be significant, as the different mathematical models tend to yield similar outcomes overall.
+	
+	Ultimately, while different models may lead to slight variations in stress levels, we believe that the core conclusions of our study would remain unchanged.
+	
+	The following sentences were added to the last line of the first paragraph in the "Introduction" section:
+	
+	"Recent advancements in material investigations, such as those highlighted in the studies cite{...}, stress various approaches to modeling creep behavior and its long-term effects on developing materials. This study primarily aims to emphasize the significance of creep effects on the long-term structural behavior of arch dams rather than solely focusing on the advancements in creep modeling. As such, it positions current literature in the context of the creep effects on infrastructure, particularly regarding concrete dams."
+	
+	
+	\subsubsection{Comment 6}
+	\RC	The model calibration process, while explained, could benefit from additional discussion on the uncertainties and potential errors in the parameters obtained from the USBR data. This will provide more transparency in the results and allow readers to understand the confidence level in the numerical predictions.
+	
+	\AR In the newly added Section 6.2, titled "Limitations and Shortcomings," we have elaborated on the sources of errors and uncertainties.
+	
+	
+	\subsubsection{Comment 7}
+	\RC	The discussion of creep effects on the structural behavior of the dam should go deeper into the long-term practical implications. For example, the manuscript mentions stress reduction by up to 55\%, but it would be useful to connect this more explicitly to dam safety and risk	assessment, especially in light of climate change and evolving environmental conditions.
+	
+	\AR As previously mentioned, the revised manuscript includes several references to structural reevaluation and assessment, particularly in Sections 6.2, 7, and 7.2, where we discuss the implications of stress reduction on dam safety. However, we acknowledge that the authors do not explore the direct connection to climate change, as this important area of study falls outside the scope of our current investigation.
+	
+	We appreciate your insightful comment, and we hope that our manuscript provides valuable foundations for future research in this critical field.	
+	
+	\subsubsection{Comment 8}
+	\RC	Visual representations of the analysis results (such as the displacement and stress contours) are helpful, but the interpretation of these results could be more robust. The manuscript should explore the broader implications of these findings, possibly suggesting improvements	to current maintenance or design practice
+	
+	\AR Done. Please read the added sections of "6.2, 7 and 7.2".
+	
+	\subsubsection{Comment 9}
+	\RC The manuscript critiques the international guidelines for applying creep models, but this discussion is somewhat isolated. A more systematic comparison between the observed behavior of Karun 1 dam and other dams referenced in guidelines could strengthen this argument. Additionally, including more specific recommendations for improving these guidelines would enhance the practical value of the paper
+	
+	\AR We appreciate your feedback and have addressed these points in the revised manuscript:
+	
+	1. Enhanced Discussion:
+
+	- We have expanded our discussion in sections 6.2, 7, and 7.2 to provide a more comprehensive analysis of our findings in relation to international guidelines.
+	
+	2. Comparison with Other Dams:
+
+	- It's important to note that current guidelines do not reference specific dams regarding creep effects, which limits direct comparisons.
+
+	- However, in the introduction, we have included data from previous studies, such as:Kiziriya and Madzagua (1969); TRB Executive Committee (2006)
+
+	- The creep effect percentages reported in these studies closely align with our research findings, providing contextual support for our observations.
+	
+	3. Focus on Numerical Study:
+	
+	- We identified a gap in the literature regarding numerical studies of creep effects in high arch dams.
+	
+	- In response, we refined our introduction to highlight the specific challenges and knowledge gaps in long-term analysis of arch dams due to creep.
+	
+	- This approach allows us to better position our research within the existing body of knowledge and emphasize its unique contributions.
+	
+	4. Recommendations for Guidelines:
+	- Some comments have been made in section 7.2.
+	
+	- As pointed out in section 7, our findings provide valuable insights that could inform future revisions of international guidelines.
+	
+	- We believe that the detailed analysis of the Karun 1 dam presented in our study offers a solid foundation for future work in this area.
+	
+	
+	\subsection{Minor Comments}
+	\subsubsection{Comment 1}
+	
+	\RC Review the manuscript for long, complex sentences that may confuse the reader. For instance, in the introduction, breaking down longer sentences into shorter, concise statements will improve clarity.
+	
+	\AR Done.
+	
+	\subsubsection{Comment 2}
+	
+	\RC Ensure consistent tense usage throughout. There are occasional shifts between past and present tense, particularly in the discussion sections. It is recommended to keep the tense consistent for smoother readability.
+	
+	\AR Done.
+	
+	\subsubsection{Comment 3}
+	
+	\RC Standardize the technical terms used in the manuscript. For instance, ensure that terms like "Norton formulation" or "creep strain" are used consistently throughout the text to avoid confusion.
+	
+	\AR Done.
+	
+	\subsubsection{Comment 4}
+	
+	\RC Check for the uniformity of units (e.g., MPa, mm) and ensure they are written correctly (with spaces between numbers and units) throughout the document.
+	
+	\AR Done.
+	
+	\subsubsection{Comment 5}
+	
+	\RC In several instances, the figures are referenced but not adequately explained in the text. For example, when discussing Figures 9 and 10, ensure that each figure's key takeaway is discussed in the text to guide the reader's attention.
+	
+	\AR Done.
+	
+	\subsubsection{Comment 6}
+	
+	\RC Ensure that all figures and tables have appropriate captions that are descriptive enough to stand alone without needing to refer to the main text.
+	
+	\AR Done.
+	
+	\subsubsection{Comment 7}
+	
+	\RC Add brief transition sentences between sections. For instance, before moving from the introduction of the Karun 1 dam to the description of the numerical model setup, a sentence summarizing why the model setup is the next step would help improve the flow.
+	
+	\AR Done.
+	
+	\subsubsection{Comment 8}
+	
+	\RC The abstract currently contains several ideas but could be more concise. Aim for brevity while ensuring that the key findings, methods, and conclusions are emphasized.
+	
+	\AR Done.
+	
+	\subsubsection{Comment 9}
+	
+	\RC Ensure uniform line spacing between paragraphs and after section headings for a cleaner look.
+	
+	\AR The manuscript has been prepared in Latex format presented in a template provided by Springer.
+	
+	
+	
+		
+	\end{document}
