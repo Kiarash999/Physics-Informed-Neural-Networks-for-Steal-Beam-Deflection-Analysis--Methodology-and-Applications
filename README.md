@@ -7,7 +7,7 @@
 This repository contains the code and experiments for the paper:
 
 **"Physics-Informed Neural Networks for Beam Deflection Analysis: Methodology and Applications"**  
-*Kiarash Baharane et al., 2025.*
+*Kiarash Baharan et al., 2025.*
 
 The implementation uses **DeepXDE** + **TensorFlow** to solve Euler–Bernoulli beam deflection problems under several boundary and loading conditions.
 
@@ -103,9 +103,9 @@ Typical outputs include:
 If you use this repository in your research, please cite:
 
 ```
-@article{baharane2025pinnbeam,
+@article{baharan2025pinnbeam,
   title={Physics-Informed Neural Networks for Beam Deflection Analysis: Methodology and Applications},
-  author={Baharane, Kiarash and Dr. hassan Mirzabozorg},
+  author={Baharan, Kiarash and Dr. hassan Mirzabozorg},
   year={2025},
   journal={Advanced Computational Engineering}
 }
@@ -121,6 +121,6 @@ This project is licensed under the **MIT License** — see `LICENSE` file.
 
 ## 👤 Contact
 
-Kiarash Baharane  
-Email: [kiarashbaharan@example.com]  
+Kiarash Baharan  
+Email: [kiarashbaharan@gmail.com]  
 GitHub: [github.com/kiarash999]
