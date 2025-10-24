@@ -6,7 +6,7 @@
 
 This repository contains the code and experiments for the paper:
 
-**"Physics-Informed Neural Networks for Beam Deflection Analysis: Methodology and Applications"**  
+**"Physics-Informed Neural Networks for Steal Beam Deflection Analysis: Methodology and Applications"**  
 *Kiarash Baharan et al., 2025.*
 
 The implementation uses **DeepXDE** + **TensorFlow** to solve Euler–Bernoulli beam deflection problems under several boundary and loading conditions.
