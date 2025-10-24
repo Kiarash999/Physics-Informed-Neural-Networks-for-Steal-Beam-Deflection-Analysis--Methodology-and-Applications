@@ -1,3 +1,5 @@
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 # Physics-Informed Neural Networks for Beam Deflection Analysis
 
 This repository provides the implementation of **Physics-Informed Neural Networks (PINNs)** developed for solving **Euler–Bernoulli beam deflection problems** under various boundary and loading conditions.
