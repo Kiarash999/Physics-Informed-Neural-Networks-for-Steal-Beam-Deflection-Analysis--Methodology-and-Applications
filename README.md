@@ -1,4 +1,4 @@
-# Physics-Informed Neural Networks for Beam Deflection Analysis
+# Physics-Informed Neural Networks for Steal Beam Deflection Analysis
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
