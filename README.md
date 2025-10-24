@@ -104,7 +104,7 @@ If you use this repository in your research, please cite:
 
 ```
 @article{baharan2025pinnbeam,
-  title={Physics-Informed Neural Networks for Beam Deflection Analysis: Methodology and Applications},
+  title={Physics-Informed Neural Networks for Steal Beam Deflection Analysis: Methodology and Applications},
   author={Baharan, Kiarash and Dr. hassan Mirzabozorg},
   year={2025},
   journal={Advanced Computational Engineering}
